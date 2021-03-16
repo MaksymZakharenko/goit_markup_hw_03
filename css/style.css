@@ -8,24 +8,26 @@
 /* цвет фона services и footer #2F303A */
 
 :root {
-  --primary-text-color: #757575;
-  --secondary-text-color: #2196F3;
-  --title-text-color: #212121;
-  --primary-font-color: #FFFFFF;
-  --secondary-font-color: #F5F4FA;
-  --third-font-color: #2F303A;
+--primary-text-color: #757575;
+--secondary-text-color: #2196F3;
+--title-text-color: #212121;
+--primary-font-color: #FFFFFF;
+--secondary-font-color: #F5F4FA;
+--third-font-color: #2F303A;
   
 }
 
 body {
-  background-color: var(--primary-font-color);
-  color: var(--primary-text-color);
-  font-family: roboto, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  text-decoration: none;
-  }
+color: var(--primary-text-color);
+background-color: var(--primary-font-color);
+font-family: roboto, sans-serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+text-decoration: none;
+padding: 0px;
+margin: 0px;
+}
 
  h1,
  h2,
@@ -33,19 +35,23 @@ body {
  h4,
  h5,
  h6 {
-  font-family: roboto, sans-serif;
-  color: var(--title-text-color);
- } 
+font-family: roboto, sans-serif;
+color: var(--title-text-color);
+} 
 
 li {
-  list-style: none;
+list-style: none;
 }
+
+/*Стартовая страница */
 
 .container {
 width: 1600px;
 padding-left: 15px;
 padding-right: 15px;
 }
+
+/*Шапка*/
 
 .header {
 display: flex;
@@ -94,25 +100,25 @@ margin-left: 93px;
 }
 
 .li-contact {
-  margin-left: 50px;
+margin-left: 50px;
 }
 
 .li-contact:first-child {
-  margin-left: 0px;
+margin-left: 0px;
 }
 
 
 .nav-link {
-  display: flex;
-  color: var(--title-text-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
- }
+display: flex;
+color: var(--title-text-color);
+text-decoration: none;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1;
+}
 
 .nav-link-active {
-   display: flex;
+display: flex;
 color: var(--secondary-text-color);
 text-decoration: none;
 font-weight: 500;
@@ -129,7 +135,6 @@ color: var(--secondary-text-color);
 display: flex;
 align-items: center;
 justify-content: flex-end;
-/* padding: 0px; */
 padding-right: 215px;
 }
 
@@ -146,7 +151,7 @@ line-height: 1.1;
 color: var(--secondary-text-color);
 }
 
-/* Главная страница */
+/* Герой */
 
 .services {
 display: flex;
@@ -189,6 +194,8 @@ margin-top: 30px;
 padding: 0px;
 }
 
+/* Особенности компании */
+
 .advantages {
 display: flex;
 justify-content: center;
@@ -222,20 +229,20 @@ margin-top: 10px;
 width: 270px;
 height: 75px;
 font-size: 14px;
-line-height: 1.1;
+line-height: 1.7;
 margin-top: 10px;
 margin-bottom: 94px;
-letter-spacing: 3%;
+letter-spacing: 0.03em;
 }
 
 .activity {
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-  padding: 0px;
-  width: 1600px;
-  height: 388px;
-  margin-bottom: 0px;
+display: flex;
+justify-content: center;
+margin: 0px;
+padding: 0px;
+width: 1600px;
+height: 388px;
+margin-bottom: 0px;
 }
 
 .activity-li {
@@ -260,19 +267,20 @@ margin-top: 0px;
 margin-bottom: 50px;
 }
 
+/* Наша комманда */
+
 .team {
- background-color: var(--secondary-font-color); 
+background-color: var(--secondary-font-color); 
 margin-bottom: 0px;
 height: 648px;
 padding: 0px;
-/* margin-top: 94px; */
 }
 
 .team-title {
-  display: flex;
-  height: 92px;
-  margin-bottom: 0px;
-  padding-top: 94px;
+display: flex;
+height: 92px;
+margin-bottom: 0px;
+padding-top: 94px;
 }
 
 .command {
@@ -285,20 +293,20 @@ padding: 0px;
 }
 
 .command-li ul {
-  padding: 0px;
+padding: 0px;
 }
 
 .command-li {
-  display: flex;
-  margin-right: 30px;
-  margin-bottom: 94px;
-  width: 270px;
- height: 368px;
-  padding: 0px;
+display: flex;
+margin-right: 30px;
+margin-bottom: 94px;
+width: 270px;
+height: 368px;
+padding: 0px;
 }
 
 .command-li:last-child {
-   margin-right: 0px;
+margin-right: 0px;
 }
 
 .people-name {
@@ -334,16 +342,16 @@ margin-bottom: 0px;
 }
 
 .address-text:last-child {
-  padding-bottom: 60px;
+padding-bottom: 60px;
 }
 
 .address-link {
-  display: flex;
-  flex-direction: column;
-  color: var(--primary-font-color);
-  line-height: 1.7;
-  font-style: normal;
-  text-decoration: none;
+display: flex;
+flex-direction: column;
+color: var(--primary-font-color);
+line-height: 1.7;
+font-style: normal;
+text-decoration: none;
 }
 
 .address-text:hover,
@@ -352,15 +360,15 @@ color: var(--secondary-text-color);
 }
 
 .logo-footer {
-  color: var(--title-text-color);
-  text-decoration: none;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  width: 145px;
-  height: 31px;
-  padding-left: 215px;
+color: var(--title-text-color);
+text-decoration: none;
+font-family: Raleway;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+width: 145px;
+height: 31px;
+padding-left: 215px;
 }
 
 .contact-footer {
